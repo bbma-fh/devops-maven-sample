@@ -10,11 +10,11 @@ pipeline {
     }
 
     environment {
-        DOCKER_CREDENTIAL_ID = 'dockerhub-id'
+        DOCKER_CREDENTIAL_ID = 'harbor-id'
         GITHUB_CREDENTIAL_ID = 'github-id'
         KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
-        REGISTRY = 'docker.io'
-        DOCKERHUB_NAMESPACE = 'bbma'
+        REGISTRY = '172.16.62.210:30085'
+        DOCKERHUB_NAMESPACE = 'wanglei-public'
         GITHUB_ACCOUNT = 'bbma-fh'
         APP_NAME = 'devops-java-sample'
     }
